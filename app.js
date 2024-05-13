@@ -14,7 +14,9 @@ app.use(express.urlencoded({ extended : false}));
 app.use(express.static(path.join(__dirname, '/Client')));
 
 //create
-
+app.get('/', (req, res)=>{
+    res.send("hello");
+})
 app.post('/insert', (req, res) => {
     const { sport } = req.body;
     const { m } = req.body;
