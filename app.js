@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname, '/Client')));
 
 //create
 app.get('/', (req, res)=>{
-    res.send("hello");
+    return "hello"
 })
 app.post('/insert', (req, res) => {
     const { sport } = req.body;
