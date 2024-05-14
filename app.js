@@ -56,6 +56,8 @@ app.get('/getAll', (req, res)=>{
     result
     .then(data => res.json({data:data}))
     .catch(err => console.log(err));
+
+    return result
 })
 
 app.get('/getAlllive', (req, res)=>{
